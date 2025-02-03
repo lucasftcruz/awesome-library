@@ -7,6 +7,18 @@ const root = path.resolve(__dirname, '..');
 module.exports = getConfig(
   {
     presets: ['module:@react-native/babel-preset'],
+    plugins: [
+      [
+        'module-resolver',
+        {
+          root,
+          alias: {
+            // This needs to be mirrored in tsconfig.json
+            '@components': path.resolve(root, 'src', 'components'),
+          },
+        },
+      ],
+    ],
   },
   { root, pkg }
 );

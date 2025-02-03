@@ -15,4 +15,13 @@ module.exports = getConfig(getDefaultConfig(__dirname), {
   root,
   pkg,
   project: __dirname,
+  resolver: {
+    extraNodeModules: {
+      '@components': path.resolve(__dirname, 'src/components'),
+    },
+  },
+  watchFolders: [
+    path.resolve(__dirname, '../src'),
+    path.resolve(__dirname, '../node_modules'),
+  ],
 });

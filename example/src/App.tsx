@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native';
-import { TestView } from 'test';
+import { TestView } from '@components/TestView';
 
 export default function App() {
   return (
