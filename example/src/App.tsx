@@ -4,7 +4,7 @@ import { TestView } from '@components/TestView';
 export default function App() {
   return (
     <View style={styles.container}>
-      <TestView color="#32a852" style={styles.box} />
+      <TestView />
     </View>
   );
 }
